@@ -12,12 +12,14 @@ Prizes are awarded to each weekly winner, as well as to the season's best overal
 The challenge that thorsboard.com faces is to keep up with division and conference changes for each team (which are more
 frequent than you might think), and more importantly, to keep up with game outcomes each week for each team.  This
 represents a formidable amount of data management each week, and as there are no free sports scores API's available at
-present, the only options are to handle all of the changes manually or to create some form of automated update system as 
-a "best effort" option that can be monitored and corrected by humans as necessary.
+present--thorsboard.com being a free game with no revenue or capital to fund its ongoing development and maintenance--
+the only options are to handle all of the changes manually or to create some form of automated update system as a
+"best effort" option that can be monitored and corrected by humans as necessary.
 
-This project represents an attempt at that "best effort" option.  Using various publicly accessible web resources, it 
-"scrapes" the required information and updates the teams and scores accordingly.  It is an admittedly fragile system, as
-it relies heavily on specific layout and style designations (CSS classes, HTML tags, etc) to be able to identify the data
-it seeks; but as those style elements do not tend to change regularly--at least not while the season is underway--it is
-actually reasonably successful at keeping thorsboard.com running smoothly as an automated game system, not requiring much
-manual intervention at all throughout a given season.
+This project represents an attempt at that "best effort" option.  Using various Python libraries and publicly accessible
+web resources, it "scrapes" the required information and updates the teams and scores accordingly.  It is an admittedly
+fragile system, as it relies heavily on specific layout and style designations (CSS classes, HTML tags, etc) to identify
+the data it seeks; but as those style elements do not tend to change regularly--at least not while the season is
+underway--it is actually reasonably successful at keeping thorsboard.com running smoothly as an automated game system,
+not requiring much manual intervention at all throughout a given season.
+c
