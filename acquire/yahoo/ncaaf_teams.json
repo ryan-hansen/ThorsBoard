@@ -1,0 +1,1138 @@
+[
+    {
+        "Atlantic Coast": [
+            {
+                "name": "Boston Coll.",
+                "yahoo_code": "bbf",
+                "color": "840214",
+                "abbrev": "BC",
+                "alt_name": "Eagles",
+                "alt_color": "C4B264"
+            },
+            {
+                "name": "Clemson",
+                "yahoo_code": "ccl",
+                "color": "F79526",
+                "abbrev": "Clemson",
+                "alt_name": "Tigers",
+                "alt_color": ""
+            },
+            {
+                "name": "Duke",
+                "yahoo_code": "ddf",
+                "color": "001A57",
+                "abbrev": "",
+                "alt_name": "Blue Devils",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "Florida St.",
+                "yahoo_code": "ffc",
+                "color": "94263C",
+                "abbrev": "FSU",
+                "alt_name": "Seminoles",
+                "alt_color": "C9BB8C"
+            },
+            {
+                "name": "Georgia Tech",
+                "yahoo_code": "ggc",
+                "color": "ECB62C",
+                "abbrev": "GT",
+                "alt_name": "Yellow Jackets",
+                "alt_color": "0"
+            },
+            {
+                "name": "Maryland",
+                "yahoo_code": "mmd",
+                "color": "CD1009",
+                "abbrev": "Maryland",
+                "alt_name": "Terrapins",
+                "alt_color": ""
+            },
+            {
+                "name": "Miami",
+                "yahoo_code": "",
+                "color": "0C3624",
+                "abbrev": "Miami",
+                "alt_name": "Hurricanes",
+                "alt_color": ""
+            },
+            {
+                "name": "Miami (FL)",
+                "yahoo_code": "mmi",
+                "color": "004F2F",
+                "abbrev": "",
+                "alt_name": "Hurricanes",
+                "alt_color": "F47320"
+            },
+            {
+                "name": "N.C. State",
+                "yahoo_code": "nnn",
+                "color": "cc1614",
+                "abbrev": "NC State",
+                "alt_name": "Wolfpack",
+                "alt_color": ""
+            },
+            {
+                "name": "North Carolina",
+                "yahoo_code": "nnl",
+                "color": "6EA4C6",
+                "abbrev": "UNC",
+                "alt_name": "Tar Heels",
+                "alt_color": ""
+            },
+            {
+                "name": "Virginia",
+                "yahoo_code": "vvb",
+                "color": "F46E24",
+                "abbrev": "Virginia",
+                "alt_name": "Cavaliers",
+                "alt_color": ""
+            },
+            {
+                "name": "Virginia Tech",
+                "yahoo_code": "vvd",
+                "color": "660000",
+                "abbrev": "",
+                "alt_name": "Hokies",
+                "alt_color": "ff6600"
+            },
+            {
+                "name": "Wake Forest",
+                "yahoo_code": "wwa",
+                "color": "AB9A6E",
+                "abbrev": "WF",
+                "alt_name": "Demon Deacons",
+                "alt_color": ""
+            }
+        ]
+    },
+    {
+        "Big 12": [
+            {
+                "name": "Baylor",
+                "yahoo_code": "bbb",
+                "color": "004834",
+                "abbrev": "",
+                "alt_name": "Bears",
+                "alt_color": "FDBB2F"
+            },
+            {
+                "name": "Iowa St.",
+                "yahoo_code": "iih",
+                "color": "C60C30",
+                "abbrev": "",
+                "alt_name": "Cyclones",
+                "alt_color": "EFBD47"
+            },
+            {
+                "name": "Kansas",
+                "yahoo_code": "kka",
+                "color": "E8000D",
+                "abbrev": "",
+                "alt_name": "Jayhawks",
+                "alt_color": "0022B4"
+            },
+            {
+                "name": "Kansas St.",
+                "yahoo_code": "kkb",
+                "color": "461D7C",
+                "abbrev": "",
+                "alt_name": "Wildcats",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "Oklahoma",
+                "yahoo_code": "ooc",
+                "color": "B40634",
+                "abbrev": "Oklahoma",
+                "alt_name": "Sooners",
+                "alt_color": "ffffff"
+            },
+            {
+                "name": "Oklahoma St.",
+                "yahoo_code": "ood",
+                "color": "FF6600",
+                "abbrev": "",
+                "alt_name": "Cowboys\nCowgirls\nPokes",
+                "alt_color": "000000"
+            },
+            {
+                "name": "TCU",
+                "yahoo_code": "tta",
+                "color": "1C0A64",
+                "abbrev": "TCU",
+                "alt_name": "Horned Frogs",
+                "alt_color": "ffffff"
+            },
+            {
+                "name": "Texas",
+                "yahoo_code": "tth",
+                "color": "E46E1C",
+                "abbrev": "Texas",
+                "alt_name": "Longhorns",
+                "alt_color": "ffffff"
+            },
+            {
+                "name": "Texas Tech",
+                "yahoo_code": "tto",
+                "color": "CC0000",
+                "abbrev": "",
+                "alt_name": "Red Raiders",
+                "alt_color": "000000"
+            },
+            {
+                "name": "West Virginia",
+                "yahoo_code": "wwh",
+                "color": "EEB211",
+                "abbrev": "",
+                "alt_name": "Mountaineers",
+                "alt_color": "00457C"
+            }
+        ]
+    },
+    {
+        "Big East": [
+            {
+                "name": "Cincinnati",
+                "yahoo_code": "ccj",
+                "color": "E00122",
+                "abbrev": "",
+                "alt_name": "Bearcats",
+                "alt_color": "000000"
+            },
+            {
+                "name": "Connecticut",
+                "yahoo_code": "ccq",
+                "color": "043E7C",
+                "abbrev": "UConn",
+                "alt_name": "Huskies",
+                "alt_color": ""
+            },
+            {
+                "name": "Louisville",
+                "yahoo_code": "llh",
+                "color": "D81E05",
+                "abbrev": "",
+                "alt_name": "Cardinals",
+                "alt_color": "000000"
+            },
+            {
+                "name": "Pittsburgh",
+                "yahoo_code": "ppd",
+                "color": "091C44",
+                "abbrev": "",
+                "alt_name": "Panthers",
+                "alt_color": "CEC499"
+            },
+            {
+                "name": "Rutgers",
+                "yahoo_code": "rrd",
+                "color": "D21034",
+                "abbrev": "",
+                "alt_name": "Scarlet Knights",
+                "alt_color": "ffffff"
+            },
+            {
+                "name": "South Florida",
+                "yahoo_code": "sbn",
+                "color": "006747",
+                "abbrev": "",
+                "alt_name": "Bulls",
+                "alt_color": "CFC493"
+            },
+            {
+                "name": "Syracuse",
+                "yahoo_code": "ssw",
+                "color": "FF7F00",
+                "abbrev": "",
+                "alt_name": "Orange",
+                "alt_color": "ffffff"
+            },
+            {
+                "name": "Temple",
+                "yahoo_code": "ttb",
+                "color": "a81625",
+                "abbrev": "",
+                "alt_name": "The Owls",
+                "alt_color": "000000"
+            }
+        ]
+    },
+    {
+        "Big Sky": [
+            {
+                "name": "Eastern Wash.",
+                "yahoo_code": "aaa",
+                "color": "D42E3C",
+                "abbrev": "EWU",
+                "alt_name": "Eagles",
+                "alt_color": "ffffff"
+            },
+            {
+                "name": "Idaho St.",
+                "yahoo_code": "iib",
+                "color": "FD7402",
+                "abbrev": "Idaho St.",
+                "alt_name": "Bengals",
+                "alt_color": "0"
+            },
+            {
+                "name": "Northern Colorado",
+                "yahoo_code": "",
+                "color": "356884",
+                "abbrev": "UNC",
+                "alt_name": "Bears",
+                "alt_color": ""
+            },
+            {
+                "name": "Weber St.",
+                "yahoo_code": "aaa",
+                "color": "4C2684",
+                "abbrev": "Weber St.",
+                "alt_name": "Wildcats",
+                "alt_color": "949294"
+            }
+        ]
+    },
+    {
+        "Big Ten": [
+            {
+                "name": "Illinois",
+                "yahoo_code": "iic",
+                "color": "F48224",
+                "abbrev": "Illinois",
+                "alt_name": "Fighting Illini",
+                "alt_color": ""
+            },
+            {
+                "name": "Indiana",
+                "yahoo_code": "iie",
+                "color": "FFFFCC",
+                "abbrev": "",
+                "alt_name": "Hoosiers",
+                "alt_color": "990000"
+            },
+            {
+                "name": "Iowa",
+                "yahoo_code": "iig",
+                "color": "000000",
+                "abbrev": "Iowa",
+                "alt_name": "Hawkeyes",
+                "alt_color": ""
+            },
+            {
+                "name": "Michigan",
+                "yahoo_code": "mmk",
+                "color": "04265C",
+                "abbrev": "Michigan",
+                "alt_name": "Wolverines",
+                "alt_color": ""
+            },
+            {
+                "name": "Michigan St.",
+                "yahoo_code": "mml",
+                "color": "04421C",
+                "abbrev": "MSU",
+                "alt_name": "Spartans",
+                "alt_color": ""
+            },
+            {
+                "name": "Minnesota",
+                "yahoo_code": "mmn",
+                "color": "840214",
+                "abbrev": "Minnesota",
+                "alt_name": "Golden Gophers",
+                "alt_color": ""
+            },
+            {
+                "name": "Nebraska",
+                "yahoo_code": "nnd",
+                "color": "EC1A1C",
+                "abbrev": "Nebraska",
+                "alt_name": "Cornhuskers",
+                "alt_color": ""
+            },
+            {
+                "name": "Northwestern",
+                "yahoo_code": "nnv",
+                "color": "492F92",
+                "abbrev": "NU",
+                "alt_name": "Wildcats",
+                "alt_color": ""
+            },
+            {
+                "name": "Ohio St.",
+                "yahoo_code": "oob",
+                "color": "D40224",
+                "abbrev": "Ohio St.",
+                "alt_name": "Buckeyes",
+                "alt_color": ""
+            },
+            {
+                "name": "Penn St.",
+                "yahoo_code": "ppb",
+                "color": "162952",
+                "abbrev": "",
+                "alt_name": "Nittany Lions and Lady Lions",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "Purdue",
+                "yahoo_code": "ppj",
+                "color": "B49E74",
+                "abbrev": "Purdue",
+                "alt_name": "Boilermakers",
+                "alt_color": ""
+            },
+            {
+                "name": "Wisconsin",
+                "yahoo_code": "wwo",
+                "color": "cc1122",
+                "abbrev": "",
+                "alt_name": "Badgers",
+                "alt_color": "FFFFFF"
+            }
+        ]
+    },
+    {
+        "Conference USA": [
+            {
+                "name": "East Carolina",
+                "yahoo_code": "eea",
+                "color": "592A8A",
+                "abbrev": "",
+                "alt_name": "Pirates",
+                "alt_color": "FEC923"
+            },
+            {
+                "name": "Houston",
+                "yahoo_code": "hhe",
+                "color": "CC0000",
+                "abbrev": "",
+                "alt_name": "Cougars",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "Marshall",
+                "yahoo_code": "mmc",
+                "color": "007A3D",
+                "abbrev": "",
+                "alt_name": "Thundering Herd",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "Memphis",
+                "yahoo_code": "mmg",
+                "color": "0C1C8C",
+                "abbrev": "",
+                "alt_name": "Tigers",
+                "alt_color": "8E9295"
+            },
+            {
+                "name": "Rice",
+                "yahoo_code": "rrb",
+                "color": "002469",
+                "abbrev": "",
+                "alt_name": "Owls",
+                "alt_color": "5e6062"
+            },
+            {
+                "name": "SMU",
+                "yahoo_code": "ssh",
+                "color": "B10000",
+                "abbrev": "",
+                "alt_name": "Mustangs",
+                "alt_color": "032B66"
+            },
+            {
+                "name": "Southern Miss",
+                "yahoo_code": "sso",
+                "color": "000000",
+                "abbrev": "",
+                "alt_name": "Golden Eagles",
+                "alt_color": "FFD700"
+            },
+            {
+                "name": "Tulane",
+                "yahoo_code": "tts",
+                "color": "01381E",
+                "abbrev": "Tulane",
+                "alt_name": "Green Wave",
+                "alt_color": "1C85BA"
+            },
+            {
+                "name": "Tulsa",
+                "yahoo_code": "ttt",
+                "color": "002B7E",
+                "abbrev": "Tulsa",
+                "alt_name": "Golden Hurricane",
+                "alt_color": "DFCD79"
+            },
+            {
+                "name": "UAB",
+                "yahoo_code": "aaz",
+                "color": "006600",
+                "abbrev": "",
+                "alt_name": "Blazers",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "UCF",
+                "yahoo_code": "ccf",
+                "color": "B79A62",
+                "abbrev": "UCF",
+                "alt_name": "Knights",
+                "alt_color": "0"
+            },
+            {
+                "name": "UTEP",
+                "yahoo_code": "ttl",
+                "color": "F45A1C",
+                "abbrev": "UTEP",
+                "alt_name": "Miners",
+                "alt_color": "0C123C"
+            }
+        ]
+    },
+    {
+        "Independents (FBS)": [
+            {
+                "name": "Army",
+                "yahoo_code": "aaq",
+                "color": "000000",
+                "abbrev": "",
+                "alt_name": null,
+                "alt_color": "E8D3AC"
+            },
+            {
+                "name": "BYU",
+                "yahoo_code": "bbi",
+                "color": "042a64",
+                "abbrev": "BYU",
+                "alt_name": "Cougars",
+                "alt_color": "ffffff"
+            },
+            {
+                "name": "Navy",
+                "yahoo_code": "nna",
+                "color": "000080",
+                "abbrev": "",
+                "alt_name": "Midshipmen",
+                "alt_color": "D4AF37"
+            },
+            {
+                "name": "Notre Dame",
+                "yahoo_code": "nnx",
+                "color": "04326C",
+                "abbrev": "Notre Dame",
+                "alt_name": "Fighting Irish",
+                "alt_color": "F5CE32"
+            }
+        ]
+    },
+    {
+        "Mid-American": [
+            {
+                "name": "Akron",
+                "yahoo_code": "aac",
+                "color": "00285C",
+                "abbrev": "",
+                "alt_name": "Zips",
+                "alt_color": "CAB388"
+            },
+            {
+                "name": "Ball St.",
+                "yahoo_code": "bba",
+                "color": "CC0000",
+                "abbrev": "",
+                "alt_name": "Cardinals",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "Bowling Green",
+                "yahoo_code": "bbh",
+                "color": "FF7300",
+                "abbrev": "",
+                "alt_name": "Falcons",
+                "alt_color": "613005"
+            },
+            {
+                "name": "Buffalo",
+                "yahoo_code": "bbp",
+                "color": "041A9B",
+                "abbrev": "",
+                "alt_name": "Bulls",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "Cent. Michigan",
+                "yahoo_code": "ccg",
+                "color": "660033",
+                "abbrev": "",
+                "alt_name": "Chippewas",
+                "alt_color": "FFCC00"
+            },
+            {
+                "name": "East. Michigan",
+                "yahoo_code": "eef",
+                "color": "005d28",
+                "abbrev": "",
+                "alt_name": "Eagles",
+                "alt_color": "ffffff"
+            },
+            {
+                "name": "Kent St.",
+                "yahoo_code": "kkc",
+                "color": "0A0D6F",
+                "abbrev": "",
+                "alt_name": "Golden Flashes",
+                "alt_color": "FFAB1B"
+            },
+            {
+                "name": "Massachusets",
+                "yahoo_code": "",
+                "color": "A40634",
+                "abbrev": "UMass",
+                "alt_name": "Minutemen",
+                "alt_color": ""
+            },
+            {
+                "name": "Massachusetts",
+                "yahoo_code": "mme",
+                "color": "881C1C",
+                "abbrev": "",
+                "alt_name": "Minutemen/Minutewomen",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "Miami (OH)",
+                "yahoo_code": "mmj",
+                "color": "CE1126",
+                "abbrev": "",
+                "alt_name": "RedHawks",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "Northern Illinois",
+                "yahoo_code": "nns",
+                "color": "cc1122",
+                "abbrev": "",
+                "alt_name": "Huskies",
+                "alt_color": "000000"
+            },
+            {
+                "name": "Ohio",
+                "yahoo_code": "ooa",
+                "color": "006A4D",
+                "abbrev": "",
+                "alt_name": "Bobcats",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "Toledo",
+                "yahoo_code": "ttp",
+                "color": "191970",
+                "abbrev": "",
+                "alt_name": "Rockets",
+                "alt_color": "FFD700"
+            },
+            {
+                "name": "W. Michigan",
+                "yahoo_code": "wwl",
+                "color": "6a3e0f",
+                "abbrev": "",
+                "alt_name": "Broncos",
+                "alt_color": "e3bc85"
+            }
+        ]
+    },
+    {
+        "Missouri Valley": [
+            {
+                "name": "Northern Iowa",
+                "yahoo_code": "aaa",
+                "color": "440284",
+                "abbrev": "UNI",
+                "alt_name": "Panthers",
+                "alt_color": "FCBA04"
+            }
+        ]
+    },
+    {
+        "Mountain West": [
+            {
+                "name": "Air Force",
+                "yahoo_code": "aab",
+                "color": "245694",
+                "abbrev": "Air Force",
+                "alt_name": "Falcons",
+                "alt_color": "ffffff"
+            },
+            {
+                "name": "Boise St.",
+                "yahoo_code": "bbe",
+                "color": "04529C",
+                "abbrev": "Boise St.",
+                "alt_name": "Broncos",
+                "alt_color": "EC7A3C"
+            },
+            {
+                "name": "Colorado St.",
+                "yahoo_code": "cco",
+                "color": "04664C",
+                "abbrev": "CSU",
+                "alt_name": "Rams",
+                "alt_color": "BBA46D"
+            },
+            {
+                "name": "Fresno St.",
+                "yahoo_code": "ffe",
+                "color": "e31937",
+                "abbrev": "",
+                "alt_name": "Bulldogs",
+                "alt_color": "00539b"
+            },
+            {
+                "name": "Hawaii",
+                "yahoo_code": "hhc",
+                "color": "047644",
+                "abbrev": "Hawaii",
+                "alt_name": "Warriors",
+                "alt_color": "0"
+            },
+            {
+                "name": "Nevada",
+                "yahoo_code": "nnf",
+                "color": "1A3E60",
+                "abbrev": "Nevada",
+                "alt_name": "Wolf Pack",
+                "alt_color": "ffffff"
+            },
+            {
+                "name": "New Mexico",
+                "yahoo_code": "nnh",
+                "color": "D41244",
+                "abbrev": "New Mexico",
+                "alt_name": "Lobos",
+                "alt_color": "0"
+            },
+            {
+                "name": "San Diego St.",
+                "yahoo_code": "ssb",
+                "color": "BC2E3C",
+                "abbrev": "SDSU",
+                "alt_name": "Aztecs",
+                "alt_color": "0"
+            },
+            {
+                "name": "UNLV",
+                "yahoo_code": "nne",
+                "color": "D4022F",
+                "abbrev": "UNLV",
+                "alt_name": "Rebels",
+                "alt_color": "AEAEAE"
+            },
+            {
+                "name": "Wyoming",
+                "yahoo_code": "wwq",
+                "color": "54321C",
+                "abbrev": "Wyoming",
+                "alt_name": "Cowboys",
+                "alt_color": "FBC82E"
+            }
+        ]
+    },
+    {
+        "Pac-12": [
+            {
+                "name": "Arizona",
+                "yahoo_code": "aal",
+                "color": "141E5C",
+                "abbrev": "Arizona",
+                "alt_name": "Wildcats",
+                "alt_color": "D41224"
+            },
+            {
+                "name": "Arizona St.",
+                "yahoo_code": "aam",
+                "color": "A40244",
+                "abbrev": "ASU",
+                "alt_name": "Sun Devils",
+                "alt_color": ""
+            },
+            {
+                "name": "California",
+                "yahoo_code": "ccd",
+                "color": "1C2674",
+                "abbrev": "Cal",
+                "alt_name": "Golden Bears",
+                "alt_color": ""
+            },
+            {
+                "name": "Colorado",
+                "yahoo_code": "ccn",
+                "color": "C4AD50",
+                "abbrev": "CU",
+                "alt_name": "Buffaloes",
+                "alt_color": ""
+            },
+            {
+                "name": "Oregon",
+                "yahoo_code": "ooe",
+                "color": "094C3A",
+                "abbrev": "Oregon",
+                "alt_name": "Ducks",
+                "alt_color": "FCE914"
+            },
+            {
+                "name": "Oregon St.",
+                "yahoo_code": "oof",
+                "color": "FC5A04",
+                "abbrev": "Oregon St.",
+                "alt_name": "Beavers",
+                "alt_color": "0"
+            },
+            {
+                "name": "Stanford",
+                "yahoo_code": "sss",
+                "color": "CB1A22",
+                "abbrev": "Stanford",
+                "alt_name": "Cardinal",
+                "alt_color": ""
+            },
+            {
+                "name": "UCLA",
+                "yahoo_code": "uua",
+                "color": "1C569C",
+                "abbrev": "UCLA",
+                "alt_name": "Bruins",
+                "alt_color": "ECBE13"
+            },
+            {
+                "name": "USC",
+                "yahoo_code": "uub",
+                "color": "A4001D",
+                "abbrev": "USC",
+                "alt_name": "Trojans",
+                "alt_color": ""
+            },
+            {
+                "name": "Utah",
+                "yahoo_code": "uuc",
+                "color": "CC0000",
+                "abbrev": "Utah",
+                "alt_name": "Utes",
+                "alt_color": "0"
+            },
+            {
+                "name": "Washington",
+                "yahoo_code": "wwb",
+                "color": "342E7C",
+                "abbrev": "Washington",
+                "alt_name": "Huskies",
+                "alt_color": "FCDA14"
+            },
+            {
+                "name": "Washington St.",
+                "yahoo_code": "wwc",
+                "color": "A40E1C",
+                "abbrev": "WSU",
+                "alt_name": "Cougars",
+                "alt_color": "969CA3"
+            }
+        ]
+    },
+    {
+        "Southeastern": [
+            {
+                "name": "Alabama",
+                "yahoo_code": "",
+                "color": "942E3C",
+                "abbrev": "Alabama",
+                "alt_name": "Crimson Tide",
+                "alt_color": ""
+            },
+            {
+                "name": "Mississippi",
+                "yahoo_code": "aaa",
+                "color": "CC0204",
+                "abbrev": "Ole Miss",
+                "alt_name": "Rebels",
+                "alt_color": "04027C"
+            }
+        ]
+    },
+    {
+        "Southeastern": [
+            {
+                "name": "Alabama",
+                "yahoo_code": "aad",
+                "color": "A32638",
+                "abbrev": "",
+                "alt_name": "Crimson Tide",
+                "alt_color": "ffffff"
+            },
+            {
+                "name": "Arkansas",
+                "yahoo_code": "aan",
+                "color": "C41E3A",
+                "abbrev": "",
+                "alt_name": "Razorbacks",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "Auburn",
+                "yahoo_code": "aar",
+                "color": "dd550c",
+                "abbrev": "",
+                "alt_name": "Tigers",
+                "alt_color": "03244d"
+            },
+            {
+                "name": "Florida",
+                "yahoo_code": "ffa",
+                "color": "FF4A00",
+                "abbrev": "",
+                "alt_name": "Gators",
+                "alt_color": "0021A5"
+            },
+            {
+                "name": "Georgia",
+                "yahoo_code": "ggb",
+                "color": "FF0000",
+                "abbrev": "",
+                "alt_name": "Bulldogs, 'Dawgs",
+                "alt_color": "000000"
+            },
+            {
+                "name": "Kentucky",
+                "yahoo_code": "kkd",
+                "color": "005DAA",
+                "abbrev": "",
+                "alt_name": "Wildcats",
+                "alt_color": "ffffff"
+            },
+            {
+                "name": "LSU",
+                "yahoo_code": "lli",
+                "color": "461D7C",
+                "abbrev": "",
+                "alt_name": null,
+                "alt_color": "FDD023"
+            },
+            {
+                "name": "Mississippi",
+                "yahoo_code": "mmo",
+                "color": "CE1126",
+                "abbrev": "",
+                "alt_name": "Rebels",
+                "alt_color": "002868"
+            },
+            {
+                "name": "Mississippi St.",
+                "yahoo_code": "mmq",
+                "color": "660000",
+                "abbrev": "",
+                "alt_name": "Bulldogs (Dawgs)",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "Missouri",
+                "yahoo_code": "mms",
+                "color": "000000",
+                "abbrev": "",
+                "alt_name": "Tigers",
+                "alt_color": "F1B82D"
+            },
+            {
+                "name": "South Carolina",
+                "yahoo_code": "ssi",
+                "color": "73000A",
+                "abbrev": "",
+                "alt_name": "Gamecocks",
+                "alt_color": "000000"
+            },
+            {
+                "name": "Tennessee",
+                "yahoo_code": "ttd",
+                "color": "F4821C",
+                "abbrev": "Tennessee",
+                "alt_name": "Volunteers",
+                "alt_color": ""
+            },
+            {
+                "name": "Texas A&M",
+                "yahoo_code": "ttj",
+                "color": "500000",
+                "abbrev": "",
+                "alt_name": "Aggies",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "Vanderbilt",
+                "yahoo_code": "vva",
+                "color": "000000",
+                "abbrev": "",
+                "alt_name": "Commodores",
+                "alt_color": "997F3D"
+            }
+        ]
+    },
+    {
+        "Southern": [
+            {
+                "name": "Citadel",
+                "yahoo_code": "",
+                "color": "04AEE4",
+                "abbrev": "Citadel",
+                "alt_name": "Bulldogs",
+                "alt_color": ""
+            }
+        ]
+    },
+    {
+        "Sun Belt": [
+            {
+                "name": "Arkansas St.",
+                "yahoo_code": "aap",
+                "color": "FF2400",
+                "abbrev": "",
+                "alt_name": "Red Wolves",
+                "alt_color": "000000"
+            },
+            {
+                "name": "Florida Atlantic",
+                "yahoo_code": "ffr",
+                "color": "003366",
+                "abbrev": "",
+                "alt_name": "Owls",
+                "alt_color": "CE2029"
+            },
+            {
+                "name": "Florida Intl.",
+                "yahoo_code": "fli",
+                "color": "002D62",
+                "abbrev": "",
+                "alt_name": "Panthers",
+                "alt_color": "C5960C"
+            },
+            {
+                "name": "LA Lafayette",
+                "yahoo_code": "ssq",
+                "color": "E34234",
+                "abbrev": "",
+                "alt_name": null,
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "LA Monroe",
+                "yahoo_code": "nnb",
+                "color": "800000",
+                "abbrev": "",
+                "alt_name": "Warhawks",
+                "alt_color": "FFD700"
+            },
+            {
+                "name": "Middle Tenn. St.",
+                "yahoo_code": "mmm",
+                "color": "00407A",
+                "abbrev": "",
+                "alt_name": "Blue Raiders",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "North Texas",
+                "yahoo_code": "nnp",
+                "color": "059033",
+                "abbrev": "",
+                "alt_name": "Mean Green",
+                "alt_color": "FFFFFF"
+            },
+            {
+                "name": "South Alabama",
+                "yahoo_code": "sal",
+                "color": "D41244",
+                "abbrev": "USA",
+                "alt_name": "Jaguars",
+                "alt_color": ""
+            },
+            {
+                "name": "Troy",
+                "yahoo_code": "ttv",
+                "color": "C41E3A",
+                "abbrev": "",
+                "alt_name": "Trojans",
+                "alt_color": "000000"
+            },
+            {
+                "name": "West. Kentucky",
+                "yahoo_code": "wwk",
+                "color": "FF2222",
+                "abbrev": "",
+                "alt_name": "Hilltoppers and Lady Toppers",
+                "alt_color": "ffffff"
+            }
+        ]
+    },
+    {
+        "Western Athletic": [
+            {
+                "name": "Idaho",
+                "yahoo_code": "iia",
+                "color": "B69565",
+                "abbrev": "Idaho",
+                "alt_name": "Vandals",
+                "alt_color": "0"
+            },
+            {
+                "name": "Louisiana Tech",
+                "yahoo_code": "llg",
+                "color": "FF0000",
+                "abbrev": "",
+                "alt_name": null,
+                "alt_color": "002F8B"
+            },
+            {
+                "name": "New Mexico St.",
+                "yahoo_code": "nni",
+                "color": "84022C",
+                "abbrev": "NM State",
+                "alt_name": "Aggies",
+                "alt_color": "16516"
+            },
+            {
+                "name": "San Jose St.",
+                "yahoo_code": "ssc",
+                "color": "0462AC",
+                "abbrev": "SJSU",
+                "alt_name": "Spartans",
+                "alt_color": "F4CA14"
+            },
+            {
+                "name": "Texas St.",
+                "yahoo_code": "ssv",
+                "color": "500000",
+                "abbrev": "",
+                "alt_name": "Bobcats",
+                "alt_color": "CFB53B"
+            },
+            {
+                "name": "Utah St.",
+                "yahoo_code": "uud",
+                "color": "101C43",
+                "abbrev": "USU",
+                "alt_name": "Aggies",
+                "alt_color": "ffffff"
+            },
+            {
+                "name": "UTSA",
+                "yahoo_code": "tsa",
+                "color": "F47321",
+                "abbrev": "",
+                "alt_name": "Roadrunners",
+                "alt_color": "white"
+            }
+        ]
+    }
+]
