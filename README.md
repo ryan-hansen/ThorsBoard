@@ -22,4 +22,3 @@ fragile system, as it relies heavily on specific layout and style designations (
 the data it seeks; but as those style elements do not tend to change regularly--at least not while the season is
 underway--it is actually reasonably successful at keeping thorsboard.com running smoothly as an automated game system,
 not requiring much manual intervention at all throughout a given season.
-c
