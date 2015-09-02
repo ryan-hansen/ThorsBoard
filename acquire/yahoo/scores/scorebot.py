@@ -102,6 +102,8 @@ class ScoreBot(object):
     def set_time(self, game_tag, game):
         try:
             time = game_tag.find('span', {'class': 'time'}).text
+            if time == 'TBA':
+                return
             parts = time.split(' ')
             time = parts[0].split(':')
             hour = int(time[0])
@@ -162,7 +164,7 @@ class ScoreBot(object):
             teams.append(team)
         return teams
 
-    def get_week(self, week='current'):
+    def get_week(self, week=None):
         now = timezone.make_aware(datetime.now(), timezone.get_default_timezone())
         delta = now - self.current_season.begins
         w = int(round(delta.total_seconds() / 60 / 60 / 24 / 7))
