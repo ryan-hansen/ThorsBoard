@@ -21,8 +21,7 @@ class ScoreBot(object):
         logging.basicConfig(filename=logfile, filemode='w', format='%(asctime)s %(message)s', level=logging.INFO)
         parser = argparse.ArgumentParser()
         parser.add_argument('-w', '--week',
-                            help='Set the week of the season to target',
-                            default='current')
+                            help='Set the week of the season to target')
         parser.add_argument('-d', '--debug',
                             help='Turn on debug output',
                             action='store_true')
@@ -34,37 +33,27 @@ class ScoreBot(object):
                             default='ncaaf')
         self.args = parser.parse_args()
         self.logger = logging.getLogger('ScoreBot')
+        self.reader = None
+        self.week = None
         self.current_season = Season.find.current()
-        try:
-            self.week = int(self.args.week)
-        except ValueError:
-            self.week = self.get_week(week=self.args.week)
-        scoreboard = os.path.join(os.path.dirname(__file__), '{0}_week{1}_scores.html'.format(
-            self.current_season.begins.year,
-            self.week
-            )
-        )
-        if not os.path.exists(scoreboard) or self.args.update:
-            msg = 'Retrieving latest data from source...'
-            print msg
-            live_url = 'http://sports.yahoo.com/__xhr/sports/scoreboard/gs/?lid={0}&week={1}&conf=all'.format(
-                self.args.sport,
-                self.week
-            )
-            reader = PageReader(live_url, soup=False)
-            try:
-                json.loads(reader.data)
-                f = open(scoreboard, 'w')
-                f.write(reader.data)
-                f.close()
-            except ValueError, ex:
-                self.log('Something broke: {0}'.format(ex), 'error')
-                return
-        # Open and read from the local file in all cases
-        local_url = scoreboard
-        self.reader = PageReader(local_url, soup=False)
 
-    def game_data(self):
+    def load_games(self):
+        if not self.args.week:
+            for w in xrange(1, 14):
+                self.load_week(w)
+        else:
+            week = self.args.week
+            if week in ['current', 'next']:
+                week = self.get_week(week)
+            self.load_week(week)
+
+    def load_week(self, week=None):
+        self.log('Loading week {0}'.format(week))
+        try:
+            self.get_data(week)
+        except Exception, e:
+            self.log('Trying again to retreive data...')
+            self.get_data(week)
         data = json.loads(self.reader.data)
         for g, html in data['games'].iteritems():
             date_str = re.sub('[^0-9]*', '', g)[:-4]
@@ -139,6 +128,30 @@ class ScoreBot(object):
         ))
         game.save()
 
+    def get_data(self, week):
+        scoreboard = os.path.join(os.path.dirname(__file__), '{0}_week{1}_scores.html'.format(
+            self.current_season.begins.year,
+            week
+            )
+        )
+        if not os.path.exists(scoreboard) or self.args.update:
+            msg = 'Retrieving latest data from source...'
+            self.log(msg)
+            live_url = 'http://sports.yahoo.com/__xhr/sports/scoreboard/gs/?lid={0}&week={1}&conf=all'.format(
+                self.args.sport, week )
+            reader = PageReader(live_url, soup=False)
+            try:
+                json.loads(reader.data)
+                f = open(scoreboard, 'w')
+                f.write(reader.data)
+                f.close()
+            except ValueError, ex:
+                self.log('Something broke: {0}'.format(ex), 'error')
+                raise
+        # Open and read from the local file in all cases
+        local_url = scoreboard
+        self.reader = PageReader(local_url, soup=False)
+
     def get_teams(self, game):
         teams = list()
         team_tags = game.find_all('span', {'class': 'team'})
@@ -164,7 +177,7 @@ class ScoreBot(object):
             teams.append(team)
         return teams
 
-    def get_week(self, week=None):
+    def get_week(self, week='current'):
         now = timezone.make_aware(datetime.now(), timezone.get_default_timezone())
         delta = now - self.current_season.begins
         w = int(round(delta.total_seconds() / 60 / 60 / 24 / 7))
@@ -181,4 +194,4 @@ class ScoreBot(object):
 
 if __name__ == '__main__':
     s = ScoreBot()
-    s.game_data()
+    s.load_games()
