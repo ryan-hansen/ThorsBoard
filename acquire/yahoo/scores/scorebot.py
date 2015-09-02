@@ -39,7 +39,7 @@ class ScoreBot(object):
 
     def load_games(self):
         if not self.args.week:
-            for w in xrange(1, 14):
+            for w in xrange(1, 15):
                 self.load_week(w)
         else:
             week = self.args.week
