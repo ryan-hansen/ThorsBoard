@@ -35,7 +35,10 @@ class ScoreBot(object):
         self.args = parser.parse_args()
         self.logger = logging.getLogger('ScoreBot')
         self.current_season = Season.find.current()
-        self.week = self.get_week(week=self.args.week)
+        try:
+            self.week = int(self.args.week)
+        except ValueError:
+            self.week = self.get_week(week=self.args.week)
         scoreboard = os.path.join(os.path.dirname(__file__), '{0}_week{1}_scores.html'.format(
             self.current_season.begins.year,
             self.week
