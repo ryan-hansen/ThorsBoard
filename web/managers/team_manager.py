@@ -1,7 +1,8 @@
 from django.db import models
 
+
 class TeamManager(models.Manager):
-    def byAliases(self, team_name):
+    def by_aliases(self, team_name):
         try:
             matches = self.get_query_set().filter(
                 models.Q(name=team_name) |

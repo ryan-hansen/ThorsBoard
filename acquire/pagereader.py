@@ -3,9 +3,10 @@ import urllib2
 
 from bs4 import BeautifulSoup
 
+
 class PageReader(object):
 
-    def __init__(self, uri):
+    def __init__(self, uri, soup=True):
         if uri.startswith('http'):
             req = urllib2.Request(uri, headers={'User-Agent' : "Magic Browser"})
             try:
@@ -22,7 +23,8 @@ class PageReader(object):
             data = f.read()
             f.close()
         self.data = data
-        self.soup = BeautifulSoup(self.data)
+        if soup:
+            self.soup = BeautifulSoup(self.data)
 
     def _getContentLocation(self, url):
         h = httplib2.Http(disable_ssl_certificate_validation=True)

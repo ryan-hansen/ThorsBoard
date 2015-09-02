@@ -60,7 +60,7 @@ class ICal(object):
                 else:
                     opponent = teams[0]
                     #home = True
-                opp = Team.find.byAliases(opponent)
+                opp = Team.find.by_aliases(opponent)
                 if not opp:
                     msg = 'Team {0} Not Found'.format(opponent)
                     print msg
@@ -69,7 +69,7 @@ class ICal(object):
                 game_date = comp.get('dtstart')
                 gdate = game_date.dt - timedelta(hours=6)
                 try:
-                    game = Game.find.byOpponentsAndSeason(team, opp, season)
+                    game = Game.find.by_opp_and_season(team, opp, season)
                     print '{0} vs. {1} Already Recorded'.format(team.name, opp.name)
                     if game.date != gdate:
                         print '----- UPDATING START TO {0} -----'.format(gdate)

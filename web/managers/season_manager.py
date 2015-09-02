@@ -2,6 +2,7 @@ from django.db import models
 
 from datetime import datetime
 
+
 class SeasonManager(models.Manager):
 
     def current(self):

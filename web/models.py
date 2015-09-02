@@ -4,6 +4,7 @@ from datetime import datetime, time
 
 from ThorsBoard.web.managers import TeamManager, GameManager, SeasonManager
 
+
 class Sport(models.Model):
     name = models.CharField(max_length=255)
     abbrev = models.CharField(max_length=32)
@@ -17,6 +18,7 @@ class Sport(models.Model):
     def __unicode__(self):
         return u'{name}'.format(name=self.name)
 
+
 class League(models.Model):
     sport = models.ForeignKey(Sport, related_name='leagues')
     name = models.CharField(max_length=255)
@@ -28,6 +30,7 @@ class League(models.Model):
 
     def __unicode__(self):
         return u'{name}'.format(name=self.name)
+
 
 class Team(models.Model):
     sport = models.ForeignKey(Sport, related_name='teams')
@@ -64,6 +67,7 @@ class Team(models.Model):
         else:
             return []
 
+
 class Season(models.Model):
     sport = models.ForeignKey(Sport, related_name='seasons')
     start_date = models.DateField()
@@ -83,6 +87,7 @@ class Season(models.Model):
         begins = datetime.combine(self.start_date, time())
         return timezone.make_aware(begins, timezone.get_default_timezone())
 
+
 class Game(models.Model):
     season = models.ForeignKey(Season, related_name='games')
     team1 = models.ForeignKey(Team, related_name='team1_games')
@@ -100,6 +105,39 @@ class Game(models.Model):
     def __unicode__(self):
         return u'{date}'.format(date=self.date)
 
+    @property
+    def home(self):
+        return self.team1
+
+    @home.setter
+    def home(self, value):
+        self.team1 = value
+
+    @property
+    def away(self):
+        return self.team2
+
+    @away.setter
+    def away(self, value):
+        self.team2 = value
+
+    @property
+    def home_score(self):
+        return self.team1_score
+
+    @home_score.setter
+    def home_score(self, value):
+        self.team1_score = value
+
+    @property
+    def away_score(self):
+        return self.team2_score
+
+    @away_score.setter
+    def away_score(self, value):
+        self.team2_score = value
+
+
 class User(models.Model):
     email = models.CharField(max_length=255, unique=True)
     nickname = models.CharField(max_length=25, blank=True)
@@ -108,11 +146,13 @@ class User(models.Model):
     is_active = models.IntegerField()
     created_at = models.DateTimeField()
     updated_at = models.DateTimeField()
+
     class Meta:
         db_table = u'user'
 
     def __unicode__(self):
         return u'{nickname}'.format(nickname=self.nickname)
+
 
 class Group(models.Model):
     owner = models.ForeignKey(User)
@@ -127,17 +167,21 @@ class Group(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True, auto_now=True)
     slug = models.CharField(max_length=25, unique=True, blank=True)
+
     class Meta:
         db_table = u'group'
 
     def __unicode__(self):
         return u'{name}'.format(name=self.name)
 
+
 class UserGroup(models.Model):
     user = models.ForeignKey(User)
     group = models.ForeignKey(Group)
+
     class Meta:
         db_table = u'group_user'
+
 
 class Comment(models.Model):
     user = models.ForeignKey(User)
@@ -147,8 +191,10 @@ class Comment(models.Model):
     comment = models.TextField(blank=True)
     created_at = models.DateTimeField()
     updated_at = models.DateTimeField()
+
     class Meta:
         db_table = u'comment'
+
 
 class Guess(models.Model):
     user = models.ForeignKey(User)
@@ -160,11 +206,14 @@ class Guess(models.Model):
     tb_score = models.BigIntegerField(null=True, blank=True)
     created_at = models.DateTimeField()
     updated_at = models.DateTimeField()
+
     class Meta:
         db_table = u'guess'
+
 
 class UserTeam(models.Model):
     user = models.ForeignKey(User)
     team = models.ForeignKey(Team)
+
     class Meta:
         db_table = u'user_team'
