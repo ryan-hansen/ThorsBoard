@@ -1,4 +1,4 @@
-from ThorsBoard.project.settings import *
+from project.settings import *
 
 DEBUG = False
 

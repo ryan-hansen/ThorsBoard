@@ -8,8 +8,8 @@ from datetime import datetime, timedelta
 from django.utils import timezone
 from django.db.models import Q
 
-from ThorsBoard.acquire.pagereader import PageReader
-from ThorsBoard.web.models import Team, Game, Season
+from acquire.pagereader import PageReader
+from web.models import Team, Game, Season
 
 class ICal(object):
 

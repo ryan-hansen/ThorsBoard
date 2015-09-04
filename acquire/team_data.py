@@ -1,8 +1,8 @@
 from time import sleep
 
-from ThorsBoard.web.models import Sport, Team, League
-from ThorsBoard.acquire.wiki.wikipedia import Wikipedia
-from ThorsBoard.acquire.team_wikipedia import TEAMS
+from web.models import Sport, Team, League
+from acquire.wiki.wikipedia import Wikipedia
+from acquire.team_wikipedia import TEAMS
 
 def _get_wikipedia_data(sport, team):
     wikidata = {}
@@ -23,7 +23,7 @@ def _get_wikipedia_data(sport, team):
     return wikidata
 
 def get_team_data(sport_code):
-    imp = 'thorsboard.acquire.{0}'.format(sport_code)
+    imp = 'acquire.{0}'.format(sport_code)
     module = __import__(imp, globals(), locals(), ['TeamData'], -1)
     teamdata = module.TeamData(sport_code)
     sport = Sport.objects.filter(abbrev=sport_code)[0]

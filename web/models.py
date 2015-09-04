@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 from datetime import datetime, time
 
-from ThorsBoard.web.managers import TeamManager, GameManager, SeasonManager
+from web.managers import TeamManager, GameManager, SeasonManager
 
 
 class Sport(models.Model):
@@ -164,8 +164,8 @@ class Group(models.Model):
     rss_url = models.CharField(max_length=255, blank=True)
     password = models.CharField(max_length=255, blank=True)
     max_users = models.BigIntegerField()
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now_add=True, auto_now=True)
+    created_at = models.DateTimeField(auto_now=True)
+    updated_at = models.DateTimeField(auto_now=True)
     slug = models.CharField(max_length=25, unique=True, blank=True)
 
     class Meta:

@@ -1,18 +1,20 @@
 import argparse
+import django
 import json
 import logging
 import os
 import re
-import sys
 
 from bs4 import BeautifulSoup
 from django.utils import timezone
 from datetime import datetime, timedelta
+from dateutil import parser
 
-from ThorsBoard.acquire.logs import LOG_PATH
-from ThorsBoard.acquire.pagereader import PageReader
-from ThorsBoard.web.models import Team, Game, Season
+from acquire.logs import LOG_PATH
+from acquire.pagereader import PageReader
+from web.models import Team, Game, Season
 
+django.setup()
 
 class ScoreBot(object):
 
@@ -59,7 +61,7 @@ class ScoreBot(object):
             date_str = re.sub('[^0-9]*', '', g)[:-4]
             game_date = datetime.strptime('{0}1000'.format(date_str), '%Y%m%d%H%M')
             game_date = timezone.make_aware(game_date - timedelta(hours=2), timezone.UTC())
-            g = BeautifulSoup(html)
+            g = BeautifulSoup(html, 'html.parser')
             try:
                 teams = self.get_teams(g)
             except Exception, e:
@@ -93,15 +95,18 @@ class ScoreBot(object):
             time = game_tag.find('span', {'class': 'time'}).text
             if time == 'TBA':
                 return
-            parts = time.split(' ')
-            time = parts[0].split(':')
-            hour = int(time[0])
-            minute = int(time[1])
-            meridian = parts[1]
-            tz = parts[2]
-            start_time = '{0:02d}:{1:02d} {2}'.format(hour, minute, meridian)
-            datestr = '{0} {1}'.format(datetime.strftime(game.date, '%Y-%m-%d'), start_time)
-            edate = datetime.strptime(datestr, '%Y-%m-%d %I:%M %p')
+            try:
+                edate = parser.parse(time)
+            except ValueError:
+                if ' ' in time:
+                    parts = time.split(' ')
+                    time = parts[0].split(':')
+                    hour = int(time[0])
+                    minute = int(time[1])
+                    meridian = parts[1]
+                    start_time = '{0:02d}:{1:02d} {2}'.format(hour, minute, meridian)
+                    datestr = '{0} {1}'.format(datetime.strftime(game.date, '%Y-%m-%d'), start_time)
+                    edate = datetime.strptime(datestr, '%Y-%m-%d %I:%M %p')
             gdate = timezone.make_aware(edate - timedelta(hours=2), timezone.UTC())
             if gdate != game.date:
                 self.log('Updating Start Time for {0} vs. {1}'.format(game.home.name, game.away.name))

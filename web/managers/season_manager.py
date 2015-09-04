@@ -1,9 +1,8 @@
-from django.db import models
-
 from datetime import datetime
+from django.db import models
 
 
 class SeasonManager(models.Manager):
 
     def current(self):
-        return self.get_query_set().filter(start_date__lt=datetime.utcnow()).order_by('-start_date')[0]
+        return self.get_queryset().filter(start_date__lt=datetime.utcnow()).order_by('-start_date')[0]

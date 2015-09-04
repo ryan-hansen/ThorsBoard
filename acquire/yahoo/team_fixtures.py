@@ -1,7 +1,7 @@
 import json
 import os
 
-from ThorsBoard.web.models import Team, League
+from web.models import Team, League
 
 class BuildFixture(object):
 

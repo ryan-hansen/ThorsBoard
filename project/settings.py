@@ -115,7 +115,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
-    'ThorsBoard.web',
+    'web',
 )
 
 # A sample logging configuration. The only tangible logging

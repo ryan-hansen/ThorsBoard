@@ -1,5 +1,5 @@
 
-from ThorsBoard.acquire.pagereader import PageReader
+from acquire.pagereader import PageReader
 
 class Wikipedia(PageReader):
 

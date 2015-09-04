@@ -4,7 +4,7 @@ from django.db import models
 class TeamManager(models.Manager):
     def by_aliases(self, team_name):
         try:
-            matches = self.get_query_set().filter(
+            matches = self.get_queryset().filter(
                 models.Q(name=team_name) |
                 models.Q(abbrev=team_name) |
                 models.Q(_other_names__contains=team_name)

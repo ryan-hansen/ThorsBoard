@@ -1,4 +1,4 @@
-from ThorsBoard.acquire.tagprocessor import TagProcessor
+from acquire.tagprocessor import TagProcessor
 
 class TeamData(TagProcessor):
 

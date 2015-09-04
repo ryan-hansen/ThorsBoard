@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from django.db.models import Q
 
-from ThorsBoard.acquire.pagereader import PageReader
-from ThorsBoard.web.models import Team, Season
+from acquire.pagereader import PageReader
+from web.models import Team, Season
 
 class ESPNSchedule(object):
     gt_ptn = re.compile(r'([0-9])+')

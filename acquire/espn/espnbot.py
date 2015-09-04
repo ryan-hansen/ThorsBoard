@@ -2,7 +2,7 @@ import json
 import os
 import urllib2
 
-from ThorsBoard.acquire.pagereader import PageReader
+from acquire.pagereader import PageReader
 
 url = 'http://sports.espn.go.com/ncf/bottomline/scores'
 reader = PageReader(url, soup=False)
