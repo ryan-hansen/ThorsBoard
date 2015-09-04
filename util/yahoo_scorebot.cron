@@ -3,4 +3,4 @@
 export DJANGO_SETTINGS_MODULE="project.prod_settings"
 source /home/rhansen/.bashrc
 
-${WORKON_HOME}/thorsboard/bin/python ${PROJECT_HOME}/acquire/yahoo/scores/scorebot.py -w current -u
+${WORKON_HOME}/thorsboard/bin/python ${PROJECT_HOME}/thorsboard/acquire/yahoo/scores/scorebot.py -w current -u
