@@ -108,6 +108,9 @@ class ScoreBot(object):
                     start_time = '{0:02d}:{1:02d} {2}'.format(hour, minute, meridian)
                     datestr = '{0} {1}'.format(datetime.strftime(game.date, '%Y-%m-%d'), start_time)
                     edate = datetime.strptime(datestr, '%Y-%m-%d %I:%M %p')
+                else:
+                    self.log('Time Error: {0}'.format(time))
+                    return
             gdate = timezone.make_aware(edate - timedelta(hours=2), timezone.UTC())
             if gdate != game.date:
                 self.log('Updating Start Time for {0} vs. {1}'.format(game.home.name, game.away.name))
