@@ -16,6 +16,7 @@ from web.models import Team, Game, Season
 
 django.setup()
 
+
 class ScoreBot(object):
 
     def __init__(self):
