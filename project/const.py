@@ -22,5 +22,6 @@ TEAM_ALTERNATIVES = {
     'Ky': ['Kentucky'],
     'Tex': ['Texas'],
     'Mex': ['Mexico'],
-    'Wash': ['Washington']
+    'Wash': ['Washington'],
+    'LA': ['Los Angeles', 'Louisiana']
 }
