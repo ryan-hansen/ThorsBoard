@@ -70,7 +70,10 @@ class ScoreBot(object):
                 continue
             home = [el for el in teams if el['home'] is True][0]
             away = [el for el in teams if el['home'] is False][0]
-            game = Game.find.by_opp_and_season(home['team'], away['team'], self.current_season)
+            try:
+                game = Game.find.by_opp_and_season(home['team'], away['team'], self.current_season)
+            except Exception:
+                print 'No Game'
             if game and (game.home_score and game.away_score):
                 self.log('Score already set: {0}: {1} - {2}: {3}'.format(
                     game.home.name,
@@ -169,19 +172,23 @@ class ScoreBot(object):
         for t in team_tags:
             team = dict(team=None, home=False)
             rank = None
-            team_name = t.text.replace(';', '')
+            team_name = t.text
             matched = re.search(ptn, team_name)
             if matched:
                 rank = matched.group('rank')
                 team_name = re.sub(ptn, '', team_name)
             home = True if t.find_previous('td').attrs.get('class')[0] == 'home' else False
-            t = Team.find.by_aliases(team_name.strip())
-            if t:
-                t.ap_rank = rank
-                t.save()
-            else:
-                raise Exception('No Team Found: {0}'.format(team_name))
-            team['team'] = t
+            team_name = re.sub('[;.]*', '', team_name).strip()
+            try:
+                tobj = Team.find.by_aliases(team_name)
+                tobj.ap_rank = rank
+                tobj.save()
+            except AttributeError:
+                try:
+                    tobj = Team.find.alternatives(team_name)
+                except Team.DoesNotExist as e:
+                    raise Exception('No Team Found: {0}'.format(team_name))
+            team['team'] = tobj
             team['home'] = home
             teams.append(team)
         return teams

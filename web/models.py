@@ -67,6 +67,13 @@ class Team(models.Model):
         else:
             return []
 
+    @aliases.setter
+    def aliases(self, value):
+        if isinstance(value, list):
+            value = ','.join(value)
+
+        self._other_names = value
+
 
 class Season(models.Model):
     sport = models.ForeignKey(Sport, related_name='seasons')

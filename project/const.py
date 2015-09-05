@@ -1,0 +1,26 @@
+
+TEAM_ALTERNATIVES = {
+    'N': ['North', 'Northern', 'New'],
+    'S': ['South', 'Southern', 'San'],
+    'E': ['East', 'Eastern'],
+    'W': ['West', 'Western'],
+    'St': ['State', 'Saint'],
+    'Car': ['Carolina'],
+    'Mid': ['Middle'],
+    'Tenn': ['Tennessee'],
+    'Dak': ['Dakota'],
+    'Coll': ['College'],
+    'SE': ['Southeast', 'South Eastern'],
+    'SW': ['Southwest', 'South Western'],
+    'NE': ['Northeast', 'North Eastern'],
+    'NW': ['Northwest', 'North Western'],
+    "N'western": ['Northwestern'],
+    'Ft': ['Fort'],
+    'Cent': ['Central'],
+    'Ill': ['Illinois'],
+    'Mich': ['Michigan'],
+    'Ky': ['Kentucky'],
+    'Tex': ['Texas'],
+    'Mex': ['Mexico'],
+    'Wash': ['Washington']
+}
