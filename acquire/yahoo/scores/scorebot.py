@@ -187,7 +187,9 @@ class ScoreBot(object):
                 try:
                     tobj = Team.find.alternatives(team_name)
                 except Team.DoesNotExist as e:
-                    raise Exception('No Team Found: {0}'.format(team_name))
+                    msg = 'No Team Found: {0}'.format(team_name)
+                    self.log(msg)
+                    raise Exception(msg)
             team['team'] = tobj
             team['home'] = home
             teams.append(team)
